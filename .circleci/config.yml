@@ -14,7 +14,7 @@ jobs:
       - restore_cache:
           key: v1-gradle-cache-{{ checksum "build.gradle" }}
       - run:
-          name: Install dependencies
+          name:  Install dependencies
           command: ./gradlew build -x test
       - save_cache:
           paths:
