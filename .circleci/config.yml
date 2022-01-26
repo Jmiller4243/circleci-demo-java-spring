@@ -65,7 +65,7 @@ jobs:
           command:
             ./gradlew jacocoTestReport
       - store_test_results:
-          path: __build/test-results/test
+          path: build/test-results/test
       - store_artifacts:
           path: build/test-results/test
           when: always
